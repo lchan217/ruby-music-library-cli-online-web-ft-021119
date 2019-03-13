@@ -1,3 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+
+
+
 require 'pry'
 require_relative './concerns.rb'
 
@@ -8,7 +26,7 @@ class Song
   @@all = []
   def initialize(name, artist=nil, genre=nil )
     @name = name
-    if artist != nil 
+    if artist != nil    #test: Song #initialize invokes #artist= instead of simply assigning to an @artist instance variable to ensure that associations are created upon initialization
       self.artist = artist 
     end 
     if genre != nil 

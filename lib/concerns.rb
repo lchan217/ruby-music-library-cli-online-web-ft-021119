@@ -5,4 +5,4 @@ module Concerns::Findable
   def find_by_name(name)
     all.find {|song_instance| song_instance.name == name}
   end 
-end
+end 
